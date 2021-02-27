@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+      <meta charset="UTL-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+      <title>MattyaVlog</title>
+
+      <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+      <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  </head>
+
+  <body>
+      <!--- import header.html --->
+      {% include 'header.html' %}
+
+      <div class="content">
+          <main class="main">
+              <div class="disp-area">
+                  <div class="smallArea">
+                      <span>My Instagram Pics</span>
+                  </div>
+                  <div class="largeArea">
+                      <img id="instapic" src="static/image/instagram/mattya_lab/0.jpg"  width="540" height="540">
+                      <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+                      <a class="twitter-timeline" data-chrome="noheader" data-chrome="noborders"
+                         data-width="540" data-height="540"
+                         href="https://twitter.com/mattya_lab?ref_src=twsrc%5Etfw"></a>
+                      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                  </div>
+              </div>
+          </main>
+
+          <aside class="sidebar">
+              <div class="profile_area">
+                  <div class="profile_pic">
+                       <img id="profilepic" src="static/image/profile.jpg"  width="259" height="194">
+                  </div>
+                  <div class="introduce">
+                      <p>
+                          mattya (まっちゃ)<br>
+                          Japan / Osaka / SoftwareEnginner <br>
+                          <br>
+                          Welcome to my activities.<br>
+                          My story goes on... <br>
+                      </p>
+                  </div>
+              </div>
+              <div class="sns">
+                  <div class="msg">
+                      <span>Share on Social Media</span>
+                  </div>
+                  <div class="snsbtniti">
+                      <ul>
+                          <li><a href="https://twitter.com/mattya_lab" class="flowbtn4 fl_tw2">
+                              <i class="fab fa-twitter fa-3x"></i><div>Twitter</div></a></li>
+                          <li><a href="https://instagram.com/mattya_lab/" class="flowbtn4 insta_btn2">
+                              <i class="fab fa-instagram fa-3x"></i><div>Instagram</div></a></li>
+                          <li><a href="https://github.com/mattyalab2" class="flowbtn4 github_gt2">
+                              <i class="fab fa-github fa-3x"></i><div>Github</div></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </aside>
+      </div>
+  </body>
+</html>

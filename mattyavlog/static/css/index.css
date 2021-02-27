@@ -1,0 +1,205 @@
+
+.content{
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*
+ * -------------------------------------------------------
+ * main
+ * -------------------------------------------------------
+ */
+.main{
+    flex: 5;
+    width:700px;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+/* タブエリアのdivへの適用 */
+.smallArea {
+  /* 基本的なサイズの設定 */
+  background-color: white;
+  width: 270px;
+  height: 26px;
+  padding-top: 4px;
+
+  /* borderに関する設定 */
+  border: 3px solid; /* 線の太さと可視化 */
+  border-bottom: transparent; /* 下辺を透明に */
+  border-top-left-radius: 8px; /* 左上を角丸に */
+  border-top-right-radius: 8px; /* 右上を角丸に */
+
+  /* メイン表示エリアの線の太さだけ下にずらす */
+  margin-bottom: -3px;
+
+  /* その他の設定 */
+  position: relative;
+  text-align: center;
+}
+
+/* メイン表示エリアのdivへの適用 */
+.largeArea {
+  /* 基本的なサイズの設定 */
+  background-color: #fff;
+  width: 540px;
+  height: 540px;
+  padding: 20px;
+
+  /* 枠線を太さ1pxで表示 */
+  border: 3px solid;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+}
+
+
+.disp-area {
+  margin-top: 15px;
+  margin-left: 50px;
+  color: #ff99cc;
+}
+
+/*
+ * -------------------------------------------------------
+ * sidebar
+ * -------------------------------------------------------
+ */
+.sidebar{
+    flex: 2;
+    margin-right : auto;
+    margin-left : auto;
+}
+
+.profile_pic{
+    width: 300px;
+    height: 200x;
+    margin-left : 18px;
+}
+.introduce{
+    text-align: center;
+}
+
+.profile_area{
+    display : block;
+    margin-top : 60px;
+    margin-left : 20px;
+    width: 300px;
+    height: 375px;
+}
+
+.sns{
+    margin-top: 15px;
+    margin-right: 50px;
+    color: #000000;
+
+    /* 基本的なサイズの設定 */
+    background-color: #fff;
+    width: 300px;
+    height: 110px;
+    padding: 20px;
+}
+
+.msg{
+    color: #000000;
+    text-align: center;
+}
+
+.snsbtniti{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.snsbtniti ul{
+    display: flex;
+    display:inline-block;
+    padding-left: 0;
+    list-style: none;
+}
+
+.snsbtniti li{
+     margin-right: 1rem;
+     margin_bottom: 1rem;
+     display:inline-block;
+}
+
+.snsbtniti a{
+    text-decoration: none;
+}
+
+/* ボタン全体の装飾 */
+.flowbtn4{
+    font-family:'Trebuchet MS',sans-serif;/* 好きなフォントに変えてね */
+    border-radius:50%;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    padding: 10px;
+    font-size:12px;
+    transition:.5s;
+    text-decoration:none;
+    text-align: center;
+}
+/* ボタンマウスホバー時テキストカラー */
+.flowbtn4:hover{
+    color:#fff!important;
+}
+/* Twitter */
+.flowbtn4.fl_tw2{
+    border:solid 1px #55acee;
+    color:#55acee;
+}
+/* Twitterマウスホバー時 */
+.flowbtn4.fl_tw2:hover{
+    border:solid 1px #55acee;
+    background:#55acee;
+}
+
+/* Instagram */
+.flowbtn4.insta_btn2 {
+    border:solid 1px #c6529a;
+    color:#c6529a;
+}
+/* Instagramマウスホバー時 */
+.flowbtn4.insta_btn2:hover{
+    border:solid 1px #c6529a;
+    background:#c6529a;
+}
+
+/* Github */
+.flowbtn4.github_gt2{
+    border:solid 1px #000000;
+    color:#000000;
+}
+/* Githubマウスホバー時 */
+.flowbtn4.github_gt2:hover{
+    border:solid 1px #000000;
+    background:#000000;
+}
+
+@media(max-width: 768px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar img{
+        margin: 1rem auto;
+    }
+    ul{
+        flex-wrap: wrap;
+    }
+    .content{
+        flex-direction: column;
+    }
+    img.twitter{
+        margin-right: 0;
+    }
+    img.github{
+        margin-right: 0;
+    }
+}
